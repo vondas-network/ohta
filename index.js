@@ -9,12 +9,12 @@
  * Libraries
  */
 
-const ohta = require('./lib/fukuiAsksAbout');
+const ohta = require('./lib/fukuisanAsksAbout');
 /**
  * coinglass
  */
 function askOhta(obj) {
-    ohta.fukuiAsksAbout(obj.one, obj.two, obj.three);
+    ohta.fukuisanAsksAbout(obj.one, obj.two, obj.three);
 }
 
 module.exports = { askOhta }
