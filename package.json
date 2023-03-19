@@ -1,0 +1,28 @@
+{
+  "name": "ohta",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vondas-network/ohta.git"
+  },
+  "author": "Christopher Konopka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vondas-network/ohta/issues"
+  },
+  "homepage": "https://github.com/vondas-network/ohta#readme"
+}
