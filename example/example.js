@@ -1,15 +1,7 @@
 const fukuisan = require("../index.js");
 
-var key = "YOUR_API_KEY";
-var route = "futures";
-var query = "openInterest";
-var symbol = "BTC";
-var interval = "12H";
+// info level
+fukuisan.askOhtaAbout('info', 'API', 'test', 'hello');
 
-let obj = {
-    one: key,
-    two: route,
-    three: query
-}
-
-fukuisan.askOhta(obj);
+// error level
+fukuisan.askOhtaAbout('error', 'API', 'test', 'hello');

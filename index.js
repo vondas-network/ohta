@@ -5,16 +5,10 @@
  * @summary Unofficial Coinglass API for Node.js
  */
 
-/**
- * Libraries
- */
+const ohta = require('./lib/askQuestion');
 
-const ohta = require('./lib/fukuisanAsksAbout');
-/**
- * coinglass
- */
-function askOhta(obj) {
-    ohta.fukuisanAsksAbout(obj.one, obj.two, obj.three);
+function askOhtaAbout(ask, service, module, msg) {
+    ohta.askQuestion(ask, service, module, msg);
 }
 
-module.exports = { askOhta }
+module.exports = { askOhtaAbout }
