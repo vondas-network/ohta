@@ -1,9 +1,14 @@
 # ohta
-A microservice logging library inspired by Iron Chef Japan
+A microservice logging library inspired by Ohta and Fukuisan banter from Iron Chef Japan
 
+<h3 align="center">
+  <img height="20%" width="20%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx6X5yxYXVVBSfe9Y2M1BzPz6JJ9rtNih1L9MCHhnq0JX1FKAA"/>
+</h3>
 
 # Install
+``` bash
 npm i ohta
+```
 
 # Use-case
 I want to log actions within microservice that is hosted in a Docker container that can export individual files for info and error levels
