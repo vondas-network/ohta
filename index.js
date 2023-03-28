@@ -1,8 +1,8 @@
 /**
  * @name index.js
  * @author Christopher Konopka 
- * @version v0.0.1
- * @summary Unofficial Coinglass API for Node.js
+ * @version v0.0.6
+ * @summary A microservice logging library inspired by Ohta and Fukuisan banter from Iron Chef Japan
  */
 
 const ohta = require('./lib/askQuestion');
