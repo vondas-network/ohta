@@ -2,11 +2,7 @@
 A microservice logging library inspired by Ohta and Fukuisan banter from Iron Chef Japan
 
 <h3 align="center">
-  <img height="20%" width="20%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx6X5yxYXVVBSfe9Y2M1BzPz6JJ9rtNih1L9MCHhnq0JX1FKAA"/>
-    <img height="35%" width="35%" src="https://resizing.flixster.com/ytPGaJFJrWIJO3fZ83mGPe_ReH0=/fit-in/1152x864/v2/https://flxt.tmsimg.com/assets/p16092786_b_h9_aa.jpg"/>
-  <img height="19%" width="17%" src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/3hIuCVqZx6iRJGsw2Dw65fY077j.jpg"/>
-
-  
+  <img height="80%" width="80%" src="https://i.ibb.co/mDCpyk7/ohta.png"/>
 </h3>
 
 # Install
@@ -14,8 +10,42 @@ A microservice logging library inspired by Ohta and Fukuisan banter from Iron Ch
 npm i ohta
 ```
 
-# Use-case
-I want to log actions within microservice that is hosted in a Docker container that can export individual files for info and error levels
+# Potential Use Cases
+- I want to log events within Docker microservice and export log levels into individual files. 
+- I have an API and I want to track response times.
+- I want to track events across my Docker architecture and follow logs in real-time remotely.
+
+# Log Specification
+```
+fukuisan.askOhtaAbout(LOG_LEVEL, 'SERVICE', 'OPERATION', 'MESSAGE');
+```
+- **LOG_LEVEL:** Log level (info or error)
+- **SERVICE:** The name of your microservice or application
+- **OPERATION:** Name of action happening within the application (i.e. function call, API request, server start, etc.)
+- **MESSAGE:** Message defining what the OPERATION is doing
+
+# How does this work?
+1) Fukuisan summons Ohta
+``` javascript
+const fukuisan = require("ohta");
+```
+
+2) Fukuisan asks Ohta to describe what the chefs are cooking in Kitchen Stadium
+``` javascript
+fukuisan.askOhtaAbout('info', 'API', 'pullMapData', 'REQUEST');
+```
+
+3) Ohta describes what the chefs are cooking in Kitchen Stadium
+``` json
+{
+  "level": "info",
+  "message": "The chef is whisking thick cream with shallots, purreed mangoes and a lobster prawn sauce",
+  "operation": "whiskingCream",
+  "requestId": "3de0c9f06cf61470b22bd6eedcb2a6105e64144c",
+  "service": "chefBattle",
+  "timestamp": "2023-03-27T23:37:25.488Z"
+}
+```
 
 # How to Use
 ## Examples 
@@ -23,7 +53,7 @@ I want to log actions within microservice that is hosted in a Docker container t
 ### Info Level
 ``` javascript
 const fukuisan = require("ohta");
-fukuisan.askOhtaAbout('info', 'API', 'test', 'hello');
+fukuisan.askOhtaAbout('info', 'API', 'pullMapData', 'REQUEST');
 ```
 
 ### Info Response
