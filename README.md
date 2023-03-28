@@ -3,6 +3,10 @@ A microservice logging library inspired by Ohta and Fukuisan banter from Iron Ch
 
 <h3 align="center">
   <img height="20%" width="20%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx6X5yxYXVVBSfe9Y2M1BzPz6JJ9rtNih1L9MCHhnq0JX1FKAA"/>
+    <img height="35%" width="35%" src="https://resizing.flixster.com/ytPGaJFJrWIJO3fZ83mGPe_ReH0=/fit-in/1152x864/v2/https://flxt.tmsimg.com/assets/p16092786_b_h9_aa.jpg"/>
+  <img height="19%" width="17%" src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/3hIuCVqZx6iRJGsw2Dw65fY077j.jpg"/>
+
+  
 </h3>
 
 # Install
