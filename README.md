@@ -10,6 +10,9 @@ A microservice logging library inspired by Ohta and Fukuisan banter from Iron Ch
 npm i ohta
 ```
 
+# What does it do?
+_Ohta_ logs events within Javascript programs, creates individual _.log_ files for _info_ and _error_ logs
+
 # Potential Use Cases
 - I want to log events within Docker microservice and export log levels into individual files. 
 - I have an API and I want to track response times.
