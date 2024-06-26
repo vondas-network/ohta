@@ -1,9 +1,8 @@
-# ohta
-A microservice logging library inspired by Ohta and Fukuisan banter from Iron Chef Japan
-
 <h3 align="center">
-  <img height="80%" width="80%" src="https://i.ibb.co/mDCpyk7/ohta.png"/>
+  <img height="30%" width="30%" src="https://github.com/vondas-network/ohta/assets/7625379/dc6c7228-aab9-4f82-a1bb-21ad43fd8d77"/>
 </h3>
+<p align="center"><em>A microservice logging library inspired by Ohta and Fukuisan banter from Iron Chef Japan.</em></p> 
+
 
 # Install
 ``` bash
